@@ -1,0 +1,438 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+header{
+  display: flex;
+  flex-direction: column;
+}
+.top-header{
+  display: flex;
+  background-color: #131921;
+  padding: 15px;
+  gap: 20px;
+}
+
+.top-header img{
+  width: 100px;
+  object-fit: contain;
+}
+.deliver{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.deliver i{
+  color: white;
+  font-size: 17px;
+}
+.deliver div p{
+  color: white;
+  font-size: 11px;
+  opacity: 0.7;
+}
+.deliver div p+p{
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 1;
+}
+.search-box{
+  flex: 1;
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-box input{
+  width: 100%;
+}
+
+.search-box select{
+  width: 50px;
+  padding-left: 10px;
+  border: none;
+}
+
+.search-box input{
+  padding: 10px;
+}
+.search-box button{
+  background-color: #febd69;
+  width: 50px;
+  border: none;
+  outline: none;
+
+}
+
+.search-box button i{
+  font-size: 20px;
+
+}
+
+.language{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.language img{
+  width: 20px;
+  object-fit: contain;
+}
+.language p{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.signin{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.signin p{
+  font-size: 11px;
+
+}
+.signin div {
+  display: flex;
+  gap: 2px;
+}
+.signin div p{
+  font-size: 16px;
+  font-weight: bold
+
+}
+.signin i{
+  color: white;
+  font-size: 11px;
+}
+.returns p{
+color: white;
+font-size: 11px;
+}
+.returns p+p{
+  font-size: 16px;
+  font-weight: bold;
+}
+.cart{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.cart i{
+  color: white;
+  font-size: 20px;
+}
+
+
+.cart p{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bottom-header{
+  display: flex;
+  background-color: #222c3a;
+  padding: 13px;
+  color: white;
+
+
+}
+.bar{
+  display: flex;
+  gap: 5px;
+  padding-right: 13px;
+  font-size: 15px;
+  font-weight: bold;
+  
+}
+.bar i{
+  font-size: 17px;
+}
+.list {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+.list a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* end of header*/
+
+main{
+  display: flex;
+  flex-direction: column;
+  background-color: #c2c2c2;
+  
+}
+
+.slider{
+  background-image: url('assets/amz-bg.jpeg');
+  height: 600px;
+}
+
+.categories{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  margin-top: -300px;
+
+}
+.categories> div{
+  background-color: white;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  
+}
+
+.categories>div >p{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.categories> div> div{
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+
+}
+.categories >div a{
+  color: #007185;
+  text-decoration: none;
+  font-size: 13px;
+}
+.categories >div a:hover{
+  text-decoration: underline;
+  color: #febd69;
+}
+
+.single-image-and-items img{
+  width: 120px;
+  margin-bottom: 10px;
+  display: block;
+}
+.top-sellers{
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+}
+.row-books-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+
+  
+}
+.top-sellers p{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.row-books-container img{
+  width: 180px;
+}
+
+.lastmain{
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  border: 1px solid rgb(229, 224, 224);
+  margin-top: 45px;
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+
+}
+
+.lastmain button{
+  padding: 5px 100px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: rgb(255, 200, 0);
+  border: 1px solid yellow;
+}
+.lastmain a{
+  text-decoration: none;
+}
+
+
+footer>p{
+  align-items: center;
+  text-align: center;
+  background-color: #3c4a5e;
+  color: white;
+  padding: 16px;
+
+}
+footer{
+  background-color: #29313b;
+}
+.footer1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding:  40px 120px;
+  gap: 50px;
+  color: white;
+  line-height: 30px;
+}
+
+.footer1 h6{
+  font-size: 15px;
+  font-weight: bold;
+}
+.footer1 p{
+  font-size: 14px;
+  color: rgb(235, 220, 220);
+}
+
+.footer1 p:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+.footer2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-top: 1px solid rgb(72, 71, 70);
+  padding: 50px;
+  
+
+}
+.footer2>img{
+  width: 70px;
+  object-fit: contain;
+  margin-right: 100px;
+}
+
+.footer2div1{
+  display: flex;
+  color: white;
+  border: 1px solid rgb(126, 126, 124); 
+  border-radius: 5px;
+  padding: 10px;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.fa-sort{
+  font-size: 12px;
+  align-items: center;
+  color: rgb(148, 135, 135);
+  padding-left: 20px;
+}
+.footer2div2{
+  display: flex;
+  color: white;
+  border: 1px solid rgb(126, 126, 124); 
+  border-radius: 5px;
+  padding: 10px;
+  gap: 5px;
+  font-size: 14px;
+}
+.footer2div3{
+  display: flex;
+  color: white;
+  border: 1px solid rgb(126, 126, 124); 
+  border-radius: 5px;
+  padding: 10px;
+  gap: 5px;
+  font-size: 14px;
+}
+
+
+.footer2div3 img{
+  width: 20px;
+  object-fit: contain;
+}
+aside{
+  background-color:#1a1d1f;
+  color: white;
+}
+.largefoot{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 30px 120px;
+  
+}
+.largefoot div{
+  width: 100px;
+}
+
+.largefoot p{
+font-size: 11px;
+color: #aaaaab;
+}
+.largefoot h6{
+  color: #d8dadc;
+}
+
+.largefoot p:hover{
+  text-decoration: underline;
+}
+.largefoot div:hover{
+  text-decoration: underline;
+}
+.lastfoot{
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 30px;
+  color: #d8dadc;
+
+}
+.lastdiv{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 5px;
+  
+}
+
+.lastdiv p:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
